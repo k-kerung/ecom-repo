@@ -51,3 +51,116 @@ nav{
     color: lightgray;
     font-weight: 400;
 }
+
+.slider{
+    background: url("https://images.unsplash.com/photo-1575722290270-626b0208df99?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+}
+
+.sliderWrapper{
+    display: flex;
+    width: 500vw;
+}
+
+.sliderItem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderBg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    background-color: yellow;
+    position:absolute;
+    z-index: 0;
+}
+
+.sliderImg{
+    z-index: 1;
+}
+
+.sliderTitle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+    z-index: 1;
+}
+
+.sliderPrice{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    border: 1px solid grey;
+    z-index: 1;
+}
+
+.buyButton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid grey;
+    z-index: 1;
+    cursor: pointer;
+    background-color: black;
+}
+
+.buyButton:hover{
+    color: black;
+    background-color: white;
+}
+
+.sliderItem:nth-child(1) .sliderBg{
+    background-color: #369e62;
+}
+
+.sliderItem:nth-child(2) .sliderBg{
+    background-color: rebeccapurple;
+}
+
+.sliderItem:nth-child(3) .sliderBg{
+    background-color: teal;
+}
+
+.sliderItem:nth-child(4) .sliderBg{
+    background-color: cornflowerblue;
+}
+
+.sliderItem:nth-child(5) .sliderBg{
+    background-color: rgb(124, 115, 80);
+}
+
+.sliderItem:nth-child(1) .sliderPrice{
+    color: #369e62;
+}
+
+.sliderItem:nth-child(2) .sliderPrice{
+    color: rebeccapurple;
+}
+
+.sliderItem:nth-child(3) .sliderPrice{
+    color: teal;
+}
+
+.sliderItem:nth-child(4) .sliderPrice{
+    color: cornflowerblue;
+}
+
+.sliderItem:nth-child(5) .sliderPrice{
+    color: rgb(124, 115, 80);
+}
+ 
