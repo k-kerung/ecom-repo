@@ -55,11 +55,13 @@ nav{
 .slider{
     background: url("https://images.unsplash.com/photo-1575722290270-626b0208df99?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 80%);
+    overflow: hidden;
 }
 
 .sliderWrapper{
     display: flex;
     width: 500vw;
+    transition: all 1s ease-in-out;
 }
 
 .sliderItem{
@@ -67,6 +69,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: center;
+    /* background-color: white; */
     position: relative;
 }
 
