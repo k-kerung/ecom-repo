@@ -289,7 +289,6 @@ function initializeCart() {
   document.querySelector(".closeCart").addEventListener("click", () => {
     cartContainer.classList.remove("active");
   });
-  
   // Update product button to add to cart
   productButton.removeEventListener("click", productButtonClickHandler);
   productButton.addEventListener("click", () => {
